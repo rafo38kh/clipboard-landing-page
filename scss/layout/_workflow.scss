@@ -1,5 +1,6 @@
 .workflow {
   &__section {
+    padding: 0 3rem 10rem 3rem;
   }
 
   &__details {
@@ -18,6 +19,11 @@
   }
 
   &__partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
   }
 
   &__google {

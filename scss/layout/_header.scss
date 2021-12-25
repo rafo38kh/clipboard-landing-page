@@ -1,5 +1,11 @@
+@use "../abstracts/index" as *;
+
 .clip {
   &__header {
+    background-image: url(../../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 13rem 3rem;
   }
 
   &__logo {
@@ -11,17 +17,26 @@
   }
 
   &__heading {
+    font-size: 3.2rem;
+    margin: 5rem 0 2rem 0;
     &--primary {
     }
 
     &--secondary {
+      font-size: 2.8rem;
     }
 
     &--tertiary {
+      font-size: 2.3rem;
     }
   }
 
   &__subheading {
+    color: $color-grayishBlue;
+    font-size: 1.6rem;
+    padding: 0 0.4rem;
+    line-height: 1.7;
+    margin-bottom: 5rem;
     &--primary {
     }
 
@@ -29,6 +44,10 @@
     }
 
     &--tertiary {
+    }
+
+    &--access {
+      padding: 0 2rem;
     }
   }
 

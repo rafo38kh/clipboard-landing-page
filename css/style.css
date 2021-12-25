@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+}
+
+.clip__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.clip__button {
+  width: 30rem;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: 1.8rem;
+  border: 1px solid transparent;
+}
+.clip__button--ios {
+  background-color: #26baa4;
+}
+.clip__button--mac {
+  background-color: #6173ff;
+}
+
+.clip__header {
+  background-image: url(../../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 13rem 3rem;
+}
+.clip__heading {
+  font-size: 3.2rem;
+  margin: 5rem 0 2rem 0;
+}
+.clip__heading--secondary {
+  font-size: 2.8rem;
+}
+.clip__heading--tertiary {
+  font-size: 2.3rem;
+}
+.clip__subheading {
+  color: #9fabb2;
+  font-size: 1.6rem;
+  padding: 0 0.4rem;
+  line-height: 1.7;
+  margin-bottom: 5rem;
+}
+.clip__subheading--access {
+  padding: 0 2rem;
+}
+.snippets__section {
+  padding: 0 3rem 10rem 3rem;
+}
+.snippets__imac {
+  width: 100%;
+}
+.workflow__section {
+  padding: 0 3rem 10rem 3rem;
+}
+.workflow__partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.access__section {
+  padding: 0 1rem 10rem 1rem;
+}
+.access__devices {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
