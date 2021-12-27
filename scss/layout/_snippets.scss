@@ -4,15 +4,35 @@
   }
 
   &__flexbox {
+    @media (min-width: 1140px) {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      position: relative;
+    }
   }
 
   &__imac {
     width: 100%;
+    @media (min-width: 1140px) {
+      position: absolute;
+      margin-left: -10%;
+      grid-column: 1/2;
+      width: unset;
+    }
   }
 
   &__text-wrapper {
+    @media (min-width: 1140px) {
+      grid-column: 2/3;
+    }
   }
 
   &__text-box {
+    @media (min-width: 1140px) {
+      text-align: left;
+      max-width: 35rem;
+      margin-left: 16rem;
+    }
   }
 }

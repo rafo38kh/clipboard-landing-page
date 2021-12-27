@@ -4,9 +4,18 @@
   }
 
   &__details {
+    @media (min-width: 810px) {
+      display: flex;
+      align-items: first baseline;
+      justify-content: center;
+      margin: 10rem 0 5rem 0;
+    }
   }
 
   &__detail {
+    @media (min-width: 1140px) {
+      max-width: 36rem;
+    }
   }
 
   &__blacklist {
@@ -24,20 +33,26 @@
     justify-content: center;
     align-items: center;
     gap: 6rem;
+    @media (min-width: 810px) {
+      flex-direction: row;
+    }
   }
 
-  &__google {
-  }
+  &__picture {
+    width: clamp(10rem, 14vw, 16rem);
+    &--google {
+    }
 
-  &__ibm {
-  }
+    &--ibm {
+    }
 
-  &__microsoft {
-  }
+    &--microsoft {
+    }
 
-  &__hp {
-  }
+    &--hp {
+    }
 
-  &__vector {
+    &--vector {
+    }
   }
 }

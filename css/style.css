@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  background-color: #fff;
   font-size: 1.6rem;
   font-family: "Bai Jamjuree", sans-serif;
   text-align: center;
@@ -24,6 +25,11 @@ body {
   align-items: center;
   gap: 2rem;
 }
+@media (min-width: 810px) {
+  .clip__buttons-wrapper {
+    flex-direction: row;
+  }
+}
 .clip__button {
   width: 30rem;
   padding: 1.5rem;
@@ -31,6 +37,13 @@ body {
   color: white;
   font-size: 1.8rem;
   border: 1px solid transparent;
+  box-shadow: rgba(34, 60, 80, 0.6) 0px 4px 12px;
+  box-shadow: 0px -4px 1px 0px rgba(34, 60, 80, 0.5) inset;
+}
+@media (min-width: 810px) {
+  .clip__button {
+    width: 22rem;
+  }
 }
 .clip__button--ios {
   background-color: #26baa4;
@@ -43,36 +56,114 @@ body {
   background-image: url(../../images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 13rem 3rem;
+  min-height: 50rem;
+  padding: 13rem 0;
+}
+@media (min-width: 1140px) {
+  .clip__header {
+    background-image: url(../../images/bg-header-desktop.png);
+  }
+}
+.clip__logo--secondary {
+  width: 5.5rem;
+}
+@media (min-width: 1140px) {
+  .clip__logo--secondary {
+    grid-column: 1/2;
+    justify-items: center;
+  }
 }
 .clip__heading {
-  font-size: 3.2rem;
+  font-size: clamp(3.2rem, 3.1vw, 5rem);
   margin: 5rem 0 2rem 0;
 }
 .clip__heading--secondary {
-  font-size: 2.8rem;
+  font-size: clamp(2.8rem, 2.8vw, 3.5rem);
 }
 .clip__heading--tertiary {
   font-size: 2.3rem;
 }
 .clip__subheading {
   color: #9fabb2;
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 1.7vw, 2rem);
   padding: 0 0.4rem;
   line-height: 1.7;
-  margin-bottom: 5rem;
+  max-width: 70rem;
+  margin: 0 auto 5rem auto;
+}
+@media (min-width: 1140px) {
+  .clip__subheading {
+    margin: 0 auto 8rem auto;
+  }
+}
+.clip__subheading--secondary {
+  font-size: clamp(1.6rem, 1.6vw, 1.75rem);
+}
+.clip__subheading--tertiary {
+  font-size: 1.6rem;
 }
 .clip__subheading--access {
   padding: 0 2rem;
 }
+.clipboard__section {
+  padding: 0 3rem 10rem 3rem;
+}
+@media (min-width: 1140px) {
+  .clipboard__section {
+    padding: 0 3rem 15rem 3rem;
+  }
+}
+
 .snippets__section {
   padding: 0 3rem 10rem 3rem;
+}
+@media (min-width: 1140px) {
+  .snippets__flexbox {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
 }
 .snippets__imac {
   width: 100%;
 }
+@media (min-width: 1140px) {
+  .snippets__imac {
+    position: absolute;
+    margin-left: -10%;
+    grid-column: 1/2;
+    width: unset;
+  }
+}
+@media (min-width: 1140px) {
+  .snippets__text-wrapper {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 1140px) {
+  .snippets__text-box {
+    text-align: left;
+    max-width: 35rem;
+    margin-left: 16rem;
+  }
+}
+
 .workflow__section {
   padding: 0 3rem 10rem 3rem;
+}
+@media (min-width: 810px) {
+  .workflow__details {
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    margin: 10rem 0 5rem 0;
+  }
+}
+@media (min-width: 1140px) {
+  .workflow__detail {
+    max-width: 36rem;
+  }
 }
 .workflow__partners {
   display: flex;
@@ -81,11 +172,78 @@ body {
   align-items: center;
   gap: 6rem;
 }
+@media (min-width: 810px) {
+  .workflow__partners {
+    flex-direction: row;
+  }
+}
+.workflow__picture {
+  width: clamp(10rem, 14vw, 16rem);
+}
 .access__section {
   padding: 0 1rem 10rem 1rem;
 }
+@media (min-width: 1140px) {
+  .access__section {
+    padding: 0 27rem 10rem 27rem;
+  }
+}
 .access__devices {
   width: 100%;
+}
+
+.clip__footer {
+  background-color: #f6f7f9;
+  padding: 5rem 0;
+}
+@media (min-width: 1140px) {
+  .clip__footer {
+    padding: 4rem 15rem;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    gap: 15rem;
+  }
+}
+.clip__list {
+  list-style: none;
+  margin: 5rem 0;
+}
+@media (min-width: 1140px) {
+  .clip__list {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    margin: unset;
+    text-align: left;
+    gap: 2rem;
+  }
+}
+.clip__item {
+  margin-bottom: 3rem;
+}
+@media (min-width: 1140px) {
+  .clip__item {
+    margin: unset;
+  }
+}
+.clip__link:link, .clip__link:visited {
+  color: #9fabb2;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.clip__social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+@media (min-width: 1140px) {
+  .clip__social {
+    grid-column: 3/4;
+    margin-left: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

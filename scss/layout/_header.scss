@@ -5,7 +5,13 @@
     background-image: url(../../images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 13rem 3rem;
+    min-height: 50rem;
+    padding: 13rem 0;
+
+    @media (min-width: 1140px) {
+      background-image: url(../../images/bg-header-desktop.png);
+      //   padding: unset;
+    }
   }
 
   &__logo {
@@ -13,17 +19,22 @@
     }
 
     &--secondary {
+      width: 5.5rem;
+      @media (min-width: 1140px) {
+        grid-column: 1/2;
+        justify-items: center;
+      }
     }
   }
 
   &__heading {
-    font-size: 3.2rem;
+    font-size: clamp(3.2rem, 3.1vw, 5rem);
     margin: 5rem 0 2rem 0;
     &--primary {
     }
 
     &--secondary {
-      font-size: 2.8rem;
+      font-size: clamp(2.8rem, 2.8vw, 3.5rem);
     }
 
     &--tertiary {
@@ -33,17 +44,24 @@
 
   &__subheading {
     color: $color-grayishBlue;
-    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 1.7vw, 2rem);
     padding: 0 0.4rem;
     line-height: 1.7;
-    margin-bottom: 5rem;
+    max-width: 70rem;
+    margin: 0 auto 5rem auto;
+
+    @media (min-width: 1140px) {
+      margin: 0 auto 8rem auto;
+    }
     &--primary {
     }
 
     &--secondary {
+      font-size: clamp(1.6rem, 1.6vw, 1.75rem);
     }
 
     &--tertiary {
+      font-size: 1.6rem;
     }
 
     &--access {

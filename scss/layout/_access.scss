@@ -1,6 +1,9 @@
 .access {
   &__section {
     padding: 0 1rem 10rem 1rem;
+    @media (min-width: 1140px) {
+      padding: 0 27rem 10rem 27rem;
+    }
   }
 
   &__devices {
