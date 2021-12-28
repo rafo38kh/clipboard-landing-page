@@ -2,14 +2,14 @@
 
 .clip {
   &__header {
-    background-image: url(../../images/bg-header-mobile.png);
+    background-image: url(images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 50rem;
     padding: 13rem 0;
 
     @media (min-width: 1140px) {
-      background-image: url(../../images/bg-header-desktop.png);
+      background-image: url(../images/bg-header-desktop.png);
     }
   }
 
