@@ -37,19 +37,26 @@ body {
   color: white;
   font-size: 1.8rem;
   border: 1px solid transparent;
-  box-shadow: rgba(34, 60, 80, 0.6) 0px 4px 12px;
-  box-shadow: 0px -4px 1px 0px rgba(34, 60, 80, 0.5) inset;
+  transition: all 0.2s;
 }
 @media (min-width: 810px) {
   .clip__button {
     width: 22rem;
   }
 }
+.clip__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
 .clip__button--ios {
   background-color: #26baa4;
+  box-shadow: rgba(38, 186, 164, 0.6) 0px 4px 12px;
+  box-shadow: 0px -3px 0px -1px rgba(34, 60, 80, 0.5) inset;
 }
 .clip__button--mac {
   background-color: #6173ff;
+  box-shadow: rgba(97, 115, 255, 0.6) 0px 4px 12px;
+  box-shadow: 0px -3px 0px -1px rgba(34, 60, 80, 0.5) inset;
 }
 
 .clip__header {
@@ -82,6 +89,11 @@ body {
 }
 .clip__heading--tertiary {
   font-size: 2.3rem;
+}
+@media (min-width: 1140px) {
+  .clip__heading--snippets {
+    margin: 5rem 0 0rem 0;
+  }
 }
 .clip__subheading {
   color: #9fabb2;
@@ -231,6 +243,11 @@ body {
   text-decoration: none;
   font-size: 1.7rem;
   font-weight: 600;
+  transition: all 0.2s;
+}
+.clip__link:active, .clip__link:hover {
+  cursor: pointer;
+  color: #26baa4;
 }
 .clip__social {
   list-style: none;
@@ -244,6 +261,31 @@ body {
     grid-column: 3/4;
     margin-left: auto;
   }
+}
+.clip__social--icon {
+  fill: #4c545d;
+  transition: all 0.2s;
+}
+.clip__social--icon:hover {
+  fill: #26baa4;
+}
+.clip__attribution {
+  background-color: #f6f7f9;
+  width: 100%;
+  font-size: clamp(1.1rem, 2vw, 1.2rem);
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.clip__attribution-link:link, .clip__attribution-link:visited {
+  text-transform: uppercase;
+  color: #26baa4;
+  text-decoration: none;
+  font-weight: 400;
+}
+.clip__attribution-link:hover, .clip__attribution-link:active {
+  color: #26baa4;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

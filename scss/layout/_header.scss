@@ -10,7 +10,6 @@
 
     @media (min-width: 1140px) {
       background-image: url(../../images/bg-header-desktop.png);
-      //   padding: unset;
     }
   }
 
@@ -20,6 +19,7 @@
 
     &--secondary {
       width: 5.5rem;
+
       @media (min-width: 1140px) {
         grid-column: 1/2;
         justify-items: center;
@@ -30,6 +30,7 @@
   &__heading {
     font-size: clamp(3.2rem, 3.1vw, 5rem);
     margin: 5rem 0 2rem 0;
+
     &--primary {
     }
 
@@ -39,6 +40,12 @@
 
     &--tertiary {
       font-size: 2.3rem;
+    }
+
+    &--snippets {
+      @media (min-width: 1140px) {
+        margin: 5rem 0 0rem 0;
+      }
     }
   }
 

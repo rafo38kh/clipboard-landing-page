@@ -35,6 +35,7 @@ This is a solution to the [Clipboard Landing Page Challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - SCSS custom properties
 - CSS Flexbox
+- CSS Grid
 - Mobile-first workflow
 
 ## Author
